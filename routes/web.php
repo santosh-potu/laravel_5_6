@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/ID/{id?}',function($id=0){
     return "ID is $id";
 });
+
+Route::get('/id/{id}',function($id=0){
+    return "id  is $id & case sensitive. parameter is not optional";
+});
