@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel Examples
                 </div>
 
                 <div class="links">
@@ -88,6 +88,23 @@
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                </div>                
+                <br/>
+                <hr/>
+                <div class="links">
+                    <a href="{{route('about')}}">About</a>
+                    <a href="{{route('array')}}">array example</a>
+                    <a href="{{url('ID')}}">ID</a>
+                    <a href="{{route('id',1)}}">id - small</a>
+                    <a href="{{route('lang','en')}}">Locale</a>
+                    <a href="{{route('home')}}">Home</a>
+                    <a href="{{route('titles')}}">Titles</a>
+                    <a href="{{route('facades_encrypt')}}">Facades Encrypt</a>
+                    <a href="{{route('facades_decrypt')}}">Facades Decrypt</a>
+                </div>
+                <div class="content">
+                    {{isset($author)?'Author-'.$author:''}}
+                    {{isset($purpose)?'Purpose-'.$purpose:''}}
                 </div>
             </div>
         </div>
